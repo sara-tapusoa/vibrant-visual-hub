@@ -40,7 +40,7 @@ const Index = () => {
           <img src="/lovable-uploads/logo.png" alt="Logo" className="h-8" />
           <div className="flex gap-4">
             <Button variant="ghost">Sign in</Button>
-            <Button className="bg-[#00C2CB] hover:bg-[#00A9B1] text-white">Get The App</Button>
+            <Button>Get The App</Button>
           </div>
         </nav>
 
@@ -68,7 +68,7 @@ const Index = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex gap-4"
             >
-              <Button className="bg-[#00C2CB] hover:bg-[#00A9B1] text-white px-8 py-6">
+              <Button className="px-8 py-6">
                 Get The App
               </Button>
               <Button variant="outline" className="px-8 py-6">
@@ -133,11 +133,7 @@ const Index = () => {
                 key={category.id}
                 variant={activeCategory === category.id ? "default" : "outline"}
                 onClick={() => setActiveCategory(category.id)}
-                className={`rounded-full ${
-                  activeCategory === category.id
-                    ? "bg-[#00C2CB] hover:bg-[#00A9B1] text-white"
-                    : ""
-                }`}
+                className={activeCategory === category.id ? "" : ""}
               >
                 {category.label}
               </Button>
@@ -152,10 +148,10 @@ const Index = () => {
           <h2 className="text-4xl font-bold mb-8">Download Your Next Adventure</h2>
           <p className="text-lg text-gray-300 mb-12">Available on iOS and Android</p>
           <div className="flex justify-center gap-4">
-            <Button className="bg-white text-[#042E30] hover:bg-gray-100">
+            <Button className="bg-white hover:bg-gray-100">
               App Store
             </Button>
-            <Button className="bg-white text-[#042E30] hover:bg-gray-100">
+            <Button className="bg-white hover:bg-gray-100">
               Google Play
             </Button>
           </div>
@@ -169,33 +165,33 @@ const Index = () => {
             <div>
               <h3 className="font-bold mb-4">Company</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">About</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Careers</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Press</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">About</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Careers</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Press</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-bold mb-4">Support</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Help Center</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Safety</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Terms</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Help Center</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Safety</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Terms</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-bold mb-4">Legal</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Privacy</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Terms</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Cookie Policy</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Privacy</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Terms</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Cookie Policy</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-bold mb-4">Social</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Twitter</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Instagram</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00C2CB]">Facebook</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Twitter</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Instagram</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#66D210]">Facebook</a></li>
               </ul>
             </div>
           </div>
