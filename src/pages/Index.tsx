@@ -84,7 +84,7 @@ const Index = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-[#00C2CB]/10 to-[#F3F780]/10 rounded-3xl transform rotate-6" />
             <img
-              src="/lovable-uploads/27c75d9e-35e6-40e0-bf31-a3a977f35b21.png"
+              src="/lovable-uploads/a22581f2-9ded-4f5c-a214-a2d4c846d50b.png"
               alt="App showcase"
               className="relative z-10 w-full rounded-2xl shadow-xl"
             />
